@@ -1,0 +1,163 @@
+/* Asegúrate de tener un archivo style.css con este contenido */
+
+body {
+  background-color: #b1bdd1; /* Color de fondo */
+  color: #ffffff; /* Color de texto */
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #d4d0d0; /* Color de fondo de la navbar */
+  padding: 10px; /* Espaciado interno de la navbar */
+}
+
+.navbar-brand {
+  font-size: 3rem; /* Tamaño grande del texto del logo */
+  font-family: 'Roboto', sans-serif; /* Estilo de letra del logo */
+  color: #000000 !important; /* Color del texto del logo */
+  margin-right: 100px; /* Espacio adicional entre el logo y los enlaces */
+}
+
+.navbar-brand .logo-part {
+  font-weight: bold; /* Grosor del texto para TPS y CINE */
+}
+
+.navbar-brand .logo-part.tps {
+  font-size: 3rem; /* Tamaño grande para TPS */
+  color: #FFA500; /* Color naranja para TPS */
+}
+
+.navbar-brand .logo-part.cine {
+  font-size: 3rem;
+   /* Tamaño un poco más pequeño para CINE */
+}
+
+.navbar-collapse {
+  margin-left: auto; /* Alinea los elementos a la derecha */
+}
+
+.navbar-nav {
+  display: flex; /* Usa flexbox para los enlaces de navegación */
+  flex-direction: row; /* Alinea los enlaces horizontalmente */
+  gap: 20px; /* Espacio entre los enlaces */
+}
+
+.nav-link {
+  color: #050404 !important; /* Cambia el color del texto de los enlaces */
+  font-weight: bold; /* Pone en negrita todos los enlaces de navegación */
+}
+
+/* Opcional: Cambia el color de los enlaces activos o deshabilitados */
+.nav-link.active {
+  font-weight: bold; /* Pone en negrita el enlace activo */
+}
+
+.nav-link.disabled {
+  color: #6c757d; /* Color de texto para el enlace deshabilitado */
+}
+
+.navbar-brand .logo-part.CARTELERA {
+  font-size: 2rem; 
+  
+}
+.navbar-brand .logo-part.BARRANQUILLA {
+  font-size: 2rem; /* Tamaño grande para TPS */
+  color: #FFA500; /* Color naranja para TPS */
+}
+.h2.h2.catelera-barranquilla{
+  color: #FFA500;
+
+}
+.cartelera-barranquilla {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+.cartelera {
+    color: #000;
+    font-weight: bold;
+}
+.barranquilla {
+    color: #FFA500;
+    font-weight: bol;
+}
+.peliculas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pelicula {
+  width: 250px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pelicula img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.pelicula-info {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.pelicula-info h3 {
+  margin-top: 0;
+}
+
+.cartelera-barranquilla {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cartelera {
+  color: #f0ad4e;
+  font-weight: bold;
+}
+
+.barranquilla {
+  color: #000;
+}
+img {
+  width: 60%;
+  height: auto;
+  max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+}
+/* CSS para la pantalla de carga */
+.pelicula {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Sombra de caja con desplazamiento para dar un efecto de profundidad */
+  box-shadow: 0 12px 24px rgb(0, 0, 0); /* Ajusta el tamaño y el color según tu preferencia */
+}
+
+/* Efecto de ampliación cuando se pasa el ratón sobre el contenedor de la película */
+.pelicula:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del contenedor en un 5% */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.993); /* Aumenta la sombra de caja para resaltar el contenedor */
+}
+
+/* Estilo para la imagen dentro del contenedor de la película */
+.pelicula img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+  display: block;
+  border-radius: 15px; /* Bordes redondeados para la imagen */
+}
